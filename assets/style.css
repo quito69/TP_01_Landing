@@ -28,19 +28,25 @@
     background: var(--steel-blue);
     /* box-shadow: 0 12px 20px var(--steel-blue); */
     width: 100%;    
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     align-items: center;
-    height: 150px;
+    height: 170px;
     padding: 10px 50px;
     position: absolute;
     top: 0;
     z-index: 2;
 }
 
-.navbar1 .logo {
-    height: 90%;
+.header1 .logo {
+    height: 80%;
     border-radius: 15px;
+}
+
+.header1 .nombre {
+    font-family: SweetCupCake;
+    font-size: 4rem;
 }
 
 /* Caracteristicas de mi Navbar */
@@ -48,11 +54,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.navbar1 .nombre {
-    font-family: SweetCupCake;
-    font-size: 4rem;
 }
 
 .navbar1 i {
@@ -64,7 +65,7 @@
 }
 
 .navbar1 {
-    gap: 150px;
+    gap: 50px;
 }
 
 .navbar1 ul {
@@ -100,7 +101,7 @@
     height: 60px;
     padding: 10px 50px;
     position: absolute;
-    top: 150px;
+    top: 170px;
     z-index: 2;
 }
 
