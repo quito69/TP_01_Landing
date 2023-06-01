@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@font-face {
+    font-family: SweetCupCake;
+    src: url(./Font/SweetCupcake_demo.ttf);
+}
 
 /* Colores Mezclar Bien */
 :root {
@@ -20,32 +24,38 @@
 }
 
 /* Caracteristicas de mi Header */
-header {
+.header1 {
     background: var(--steel-blue);
-    box-shadow: 0 12px 20px var(--steel-blue);
+    /* box-shadow: 0 12px 20px var(--steel-blue); */
     width: 100%;    
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 100px;
+    height: 150px;
     padding: 10px 50px;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 2;
 }
 
-.logo {
+.navbar1 .logo {
     height: 90%;
+    border-radius: 15px;
 }
 
 /* Caracteristicas de mi Navbar */
-.navbar, .navbar ul {
+.navbar1, .navbar1 ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.navbar i {
+.navbar1 .nombre {
+    font-family: SweetCupCake;
+    font-size: 5rem;
+}
+
+.navbar1 i {
     display: none;
 }
 
@@ -53,23 +63,66 @@ header {
     display: none;
 }
 
-.navbar {
-    gap: 30px;
+.navbar1 {
+    gap: 150px;
 }
 
-.navbar ul {
+.navbar1 ul {
+    font-size: x-large;
     gap: 40px;
 }
 
-.navbar ul li:hover {
+.navbar1 ul li:hover {
     border-bottom: 2px solid var(--lilac);
 }
 
-.navbar ul li a {
+.navbar1 ul li a {
     color: var(--lilac);
     font-weight: 500;
 }
 
+.navbar1 .basket-icon {
+    border-radius: 10px;
+    height: 40px;
+    padding: 5px 10px;
+    margin-right: 1rem;
+    border: 2px solid var(--lilac);
+    cursor: pointer;
+}
+
+.header2 {
+    background: var(--columbia-blue);
+    /* box-shadow: 0 12px 20px var(--steel-blue); */
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 10px 50px;
+    position: absolute;
+    top: 150px;
+    z-index: 2;
+}
+
+.navbar2, .navbar2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar2 ul {
+    font-size: x-large;
+    gap: 40px;
+}
+
+.navbar2 ul li:hover {
+    border-bottom: 2px solid var(--lilac);
+}
+
+.navbar2 ul li a {
+    color: var(--lilac);
+    font-weight: 500;
+}
 /* .navbar-link {
     color: #000; 
     font-weight: 300;
