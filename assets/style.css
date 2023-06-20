@@ -210,13 +210,14 @@ main {
 }
 
 .hero__content {
-    height: 100vh; calc(100vh - 20px);
+    height: 100vh;
+    /* calc(100vh - 20px); */
     background-color: var(--lilac);
-    background-image: url; */
+    background-image: url;
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
     /* background-position: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-} */
+    align-items: center; */
+}
