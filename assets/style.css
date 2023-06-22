@@ -104,6 +104,11 @@ header {
     padding: 10px;
 }
 
+.header2 .nombre {
+    font-family: SweetCupCake;
+    font-size: 4rem;
+}
+
 .navbar2, .navbar2 ul {
     display: flex;
     align-items: center;
@@ -143,6 +148,7 @@ main {
     align-items: center;
     gap: 40px;
     height: 76vh;
+    margin-top: calc(100vh-230px);
 }
 
 .hero-text {
@@ -340,15 +346,15 @@ main {
 
 /* Formato de Input para Ingresar/Registrarse */
 
-.form {
+.form_login, .form_register {
     background-color: var(--lilac);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 75vh;
-    margin-bottom: 20px;
+    height: 50vh;
+    margin-bottom: 238px;
 }
 
 .form__title {
